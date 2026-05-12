@@ -92,14 +92,23 @@ h1, h2, h3, .logo {
 
 .hero-badges {
     display: flex;
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .launch-badge {
     background: rgba(16, 185, 129, 0.2) !important;
     color: #34d399 !important;
-    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    border: 1px solid rgba(16, 185, 129, 0.4) !important;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.5); }
+    100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.2); }
 }
 
 .coming-soon-badge {
