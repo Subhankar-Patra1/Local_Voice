@@ -17,6 +17,11 @@ logs/
 settings.json
 history.json
 
+# Extra documentation/setup files
+voice-to-text/*.txt
+voice-to-text/*.md
+!voice-to-text/README.md
+
 # Distribution / Packaging
 dist/
 build/
