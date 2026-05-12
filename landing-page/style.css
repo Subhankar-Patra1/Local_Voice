@@ -102,11 +102,12 @@ h1, h2, h3, .logo {
 .glow-effect {
     position: relative;
     overflow: hidden;
-    padding: 0; /* Let the content handle padding */
-    border: none;
-    background: transparent;
+    padding: 0;
+    border: none !important;
+    background: none !important;
     border-radius: 50px;
     z-index: 1;
+    display: inline-block;
 }
 
 .badge-content {
