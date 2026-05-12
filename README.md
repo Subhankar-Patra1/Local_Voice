@@ -300,15 +300,27 @@ VAD_SENSITIVITY = 0.5  # Higher = less background noise picked up
 
 All processing happens **locally on your machine**. No data is sent to the cloud.
 
-## Phase 2 Features (Coming Soon)
+## 🚀 Roadmap
 
-- [ ] Push-to-talk mode (hold key to record)
-- [ ] Per-language switching from tray menu
-- [ ] Settings GUI window
-- [ ] Automatic punctuation
-- [ ] Auto-start on login
-- [ ] Single-file executable (.exe / .app / binary)
-- [ ] Hotkey customization from tray menu
+### Phase 1: Core Engine (Completed)
+- [x] Real-time local transcription
+- [x] Floating glassmorphism overlay
+- [x] Global hotkey support
+- [x] Multi-model support (Tiny to Large)
+
+### Phase 2: Professional Polish (Completed)
+- [x] **Settings GUI**: Full glassmorphism interface for easy configuration
+- [x] **Microphone Selector**: Switch inputs directly from the UI
+- [x] **Model Management**: Download and delete models to save disk space
+- [x] **Standalone Executable**: Professional Windows installer (.exe)
+- [x] **Hallucination Filter**: Clean, professional-grade transcriptions
+
+### Phase 3: Future Enhancements (Coming Soon)
+- [ ] **Real-time Waveform**: Animated audio visualizer in the overlay
+- [ ] **LocalVoice Lite**: A lightweight, CPU-optimized version (<200MB)
+- [ ] **Auto-Updater**: One-click updates from the cloud
+- [ ] **Global Push-to-Talk**: Hold a key to record instead of toggle
+- [ ] **Auto-start on login**
 
 ## License
 
