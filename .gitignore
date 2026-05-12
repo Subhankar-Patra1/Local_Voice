@@ -16,6 +16,8 @@ temp/
 logs/
 settings.json
 history.json
+realtimesst.log
+voice-to-text/test_*.py
 
 # Extra documentation/setup files
 voice-to-text/*.txt
