@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const fallbackText = document.getElementById('os-fallback');
 
     // ── GitHub Release Config ──
-    const GITHUB_REPO = 'subhankar-patra/LocalVoice';
-    const RELEASE_TAG = 'latest'; // or a specific tag like 'v1.0.0'
-    const WIN_FILENAME = 'LocalVoice.exe';
+    const GITHUB_REPO = 'Subhankar-Patra1/Local_Voice';
+    const RELEASE_TAG = 'v1.0.0'; // Updated to specific version
+    const WIN_FILENAME = 'LocalVoice_Setup.exe'; // Updated to installer name
     const LINUX_FILENAME = 'LocalVoice-Linux';
-    const RELEASES_PAGE = `https://github.com/${GITHUB_REPO}/releases/${RELEASE_TAG}`;
+    const RELEASES_PAGE = `https://github.com/${GITHUB_REPO}/releases/tag/${RELEASE_TAG}`;
     const WIN_DIRECT = `https://github.com/${GITHUB_REPO}/releases/download/${RELEASE_TAG}/${WIN_FILENAME}`;
     const LINUX_DIRECT = `https://github.com/${GITHUB_REPO}/releases/download/${RELEASE_TAG}/${LINUX_FILENAME}`;
 
