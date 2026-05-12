@@ -122,7 +122,7 @@ h1, h2, h3, .logo {
 .hero-badges {
     display: flex;
     gap: 0.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .launch-badge {
@@ -149,7 +149,6 @@ h1, h2, h3, .logo {
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
 }
 
 h1 {
