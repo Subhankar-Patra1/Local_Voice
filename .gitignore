@@ -21,6 +21,7 @@ history.json
 voice-to-text/*.txt
 voice-to-text/*.md
 !voice-to-text/README.md
+!voice-to-text/requirements.txt
 
 # Distribution / Packaging
 dist/
