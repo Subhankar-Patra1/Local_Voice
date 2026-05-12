@@ -102,21 +102,19 @@ h1, h2, h3, .logo {
 .glow-effect {
     position: relative;
     overflow: hidden;
-    padding: 0;
-    border: none !important;
-    background: none !important;
+    padding: 1px; /* The thickness of your border beam */
+    background: transparent;
     border-radius: 50px;
     z-index: 1;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .badge-content {
-    display: block;
-    position: relative;
-    margin: 1px; /* Show the border beam through */
-    padding: 0.4rem 1.2rem;
+    display: flex;
+    align-items: center;
     background: #09090b;
     border-radius: 50px;
+    padding: 0.4rem 1.2rem;
     z-index: 1;
     overflow: hidden;
     color: #34d399;
@@ -128,14 +126,14 @@ h1, h2, h3, .logo {
 .glow-effect::before {
     content: '';
     position: absolute;
-    top: -150%;
-    left: -150%;
-    width: 400%;
-    height: 400%;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
     background: conic-gradient(
         transparent, 
-        rgba(52, 211, 153, 0.8), 
-        transparent 20%
+        rgba(52, 211, 153, 1), 
+        transparent 15%
     );
     animation: borderRay 4s linear infinite;
     z-index: -1;
