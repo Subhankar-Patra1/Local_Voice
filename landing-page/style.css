@@ -118,27 +118,32 @@ h1, h2, h3, .logo {
 .glow-effect::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    top: -150%;
+    left: -150%;
+    width: 400%;
+    height: 400%;
     background: conic-gradient(
         transparent, 
         rgba(52, 211, 153, 0.8), 
-        transparent 30%
+        transparent 20%
     );
     animation: borderRay 4s linear infinite;
     z-index: -2;
 }
 
-/* Inner cover to keep the background solid */
+/* Inner background + Shimmer Layer */
 .glow-effect::after {
     content: '';
     position: absolute;
     inset: 1px;
-    background: #09090b;
+    background: linear-gradient(90deg, #09090b, #09090b), 
+                linear-gradient(90deg, transparent, rgba(52, 211, 153, 0.2), transparent);
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, -200% 0;
+    background-repeat: no-repeat;
     border-radius: inherit;
     z-index: -1;
+    animation: shimmerRunning 3s infinite linear;
 }
 
 @keyframes borderRay {
@@ -147,8 +152,8 @@ h1, h2, h3, .logo {
 }
 
 @keyframes shimmerRunning {
-    0% { left: -100%; }
-    100% { left: 100%; }
+    0% { background-position: 0 0, -200% 0; }
+    100% { background-position: 0 0, 200% 0; }
 }
 
 @keyframes fadeInUp {
