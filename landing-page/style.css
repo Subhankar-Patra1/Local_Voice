@@ -77,25 +77,31 @@ h1, h2, h3, .logo {
 /* Hero Section */
 .hero {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 4rem 5%;
+    padding: 6rem 5% 4rem;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 70vh;
+    min-height: 85vh;
+    position: relative;
+}
+
+.announcement-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    z-index: 10;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .hero-content {
     flex: 1;
     max-width: 600px;
-}
-
-.announcement-container {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 2rem;
-    animation: fadeInUp 0.8s ease-out forwards;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .glow-effect {
