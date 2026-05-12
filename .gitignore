@@ -17,6 +17,7 @@ logs/
 settings.json
 history.json
 realtimesst.log
+checkmark.svg
 voice-to-text/test_*.py
 
 # Extra documentation/setup files
