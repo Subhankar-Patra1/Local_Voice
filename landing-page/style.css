@@ -904,11 +904,13 @@ h1 {
 .code-block pre {
     padding: 1.5rem;
     overflow-x: auto;
+    white-space: pre-wrap; /* Enable wrapping for long commands */
+    word-break: break-all;
 }
 
 .code-block code {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
-    color: #34d399; /* Bright vibrant green for terminal text */
+    color: #34d399;
     line-height: 1.7;
     font-size: 1.05rem;
 }
@@ -933,9 +935,11 @@ h1 {
     display: inline-block;
     margin-top: 0.5rem;
     background: #18181b;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
     color: #a78bfa;
+    word-break: break-all;
+    max-width: 100%;
 }
 
 /* Individual Command Step Styles */
@@ -973,6 +977,7 @@ h1 {
     align-items: center;
     gap: 1.5rem;
     transition: border-color 0.3s ease;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .cmd-box:hover {
@@ -981,10 +986,11 @@ h1 {
 
 .cmd-box code {
     font-family: 'Fira Code', 'Courier New', Courier, monospace;
-    color: #34d399; /* Vibrant green command */
+    color: #34d399;
     font-size: 1rem;
     line-height: 1.5;
     word-break: break-all;
+    white-space: pre-wrap;
 }
 
 .uninstall-steps {
@@ -1168,36 +1174,58 @@ footer {
     .navbar {
         padding: 1.5rem 5%;
         flex-direction: column;
-        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+        gap: 1.2rem;
     }
 
     .nav-links {
         display: flex;
-        gap: 1rem;
+        gap: 1.2rem;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 0.5rem;
     }
 
     .nav-links a {
         margin-left: 0;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .nav-github-star {
+        margin-left: 0 !important;
+        margin-top: 0;
+    }
+
+    .announcement-bar {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1rem;
     }
 
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 1rem 5% 4rem;
+        padding: 0 5% 4rem;
         min-height: auto;
+    }
+
+    .hero-badges {
+        justify-content: center;
+        margin-bottom: 1.5rem;
     }
     
     h1 {
         font-size: 2.8rem;
         line-height: 1.2;
+        text-align: center;
+        margin: 0 auto 1rem auto;
     }
     
     .hero-content p {
-        margin: 0 auto 2rem auto;
-        font-size: 1rem;
+        margin: 0 auto 2.5rem auto;
+        font-size: 1.05rem;
+        text-align: center;
     }
     
     .download-container {
@@ -1227,15 +1255,27 @@ footer {
     
     .linux-gap-content {
         padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .linux-gap-content h2 {
         font-size: 1.8rem;
     }
 
+    .checklist {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0 auto;
+    }
+
     .checklist li {
-        justify-content: center;
+        justify-content: flex-start;
         font-size: 0.95rem;
+        width: 100%;
     }
     
     .linux-gap-card {
